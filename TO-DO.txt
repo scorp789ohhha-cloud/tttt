@@ -1,0 +1,4 @@
+1. Remove the node_modules folder so that people can use npm install without any problems
+2. Fix the priveleged tools (etc. Kick, bless and nuke) not showing in the right click menu
+3. Add the commands that the Readme.html says are included but not (/ignite and /announcement for example
+4. Add crosscolor support for all ranks

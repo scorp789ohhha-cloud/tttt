@@ -1,0 +1,11 @@
+
+	"bonziColors": [
+		"purple",
+		"blue",
+		"green",
+		"red",
+		"black",
+		"brown",
+		"pink",
+		"peedy"
+	],
