@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BonziWORLD: The Next Level</title>
+        <meta charset="utf-8" />
+        <meta content="" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <link rel="stylesheet" type="text/css" href="./css/transparent.min.css" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" href="./favicons/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="./favicons/favicon-16x16.png" sizes="16x16" />
+        <link rel="manifest" href="./favicons/manifest.json" />
+        <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#5bbad5" />
+        <link rel="shortcut icon" href="./favicons/favicon.ico" />
+        <meta name="msapplication-config" content="./favicons/browserconfig.xml" />
+        <meta name="theme-color" content="#ffffff" />
+        <script src="./js/lib/easeljs.min.js"></script>
+        <script src="./js/lib/preloadjs-0.6.2.min.js"></script>
+        <script src="./js/lib/jquery.min.js"></script>
+        <script src="./js/lib/seedrandom.min.js"></script>
+        <script src="./js/lib/socket.io-1.4.5.js"></script>
+        <script src="./js/lib/speakjs/speakClient.js"></script>
+        <script src="./js/lib/jquery.contextMenu.min.js"></script>
+        <script src="./cordova.js"></script>
+        <script src="./js/platform.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/platform.css" />
+        <script src="./js/script.min.legacy.js"></script>
+    </head>
+    <body>
+		<div id="login">
+			<h2>BonziWORLD</h2>
+			<input type="text" id="login_name" placeholder="Enter your username" maxlength="20">
+			<input type="text" id="login_room" placeholder="Room ID (optional)">
+			<button onclick="login()">Join Room</button>
+			<hr>											
+			By visiting this website you agree to the <a id="terms" href="terms.html" style="color: #ff0000; text-decoration: none;">Nondisclosure Agreement</a>.<br>Version 1.2
+			<div id="login_apps" class="app_showcase" style="display: none;"></div>
+		</div>
+		
+		<div id="page_error" class="page" style="display: none;">
+			<div id="error_cont" class="message_cont">
+				A crash has occurred. Please try <a href="javascript:window.location.reload()">reloading the page</a>.
+			</div>
+		</div>
+		<div id="page_ban" class="page" style="display: none;">
+			<div id="ban_cont" class="message_cont">
+				<br />
+				<h1>You have been banned from BonziWORLD</h1>
+				<br />
+				<br />
+				<b>Reason: </b><span id="ban_reason"></span><br />
+				<b>Deadline: </b><span id="ban_end"></span><br />
+			</div>
+		</div>
+		<div id="page_kick" class="page" style="display: none;">
+			<div id="kick_cont" class="message_cont">
+				<br />
+				<h1>You have been kicked from BonziWORLD</h1>
+				<br />
+				<br />
+				<b>Reason: </b><span id="ban_reason"></span><br />
+			</div>
+		</div>
+        <div id="content">
+			<div id="onlineCount" w-tid="14">Online: 0</div>
+			<div id="userList">
+				<h3 style="margin-bottom: 10px; color: #aaa;">Users Online</h3>
+				<div id="userListContent"></div>
+			</div> 
+			<div id="roomId" class="room-id">Room ID: <span class="room_id">???</span></div>
+            <div id="room_info">
+				<a href="" onclick="window.location.reload()">Reload?</a>
+            </div>
+            <canvas id="bonzi_canvas" width="100" height="100"></canvas>
+			<div id="chatLog"></div>
+			<input type="text" id="chatInput" placeholder="Type /help for commands">
+			<div class="control-panel">
+				<button id="streamWindowButton">📺 Stream Window</button>
+				<button id="iframeButton">📄 New Window</button>
+			</div>
+			<div class="voice-controls">
+				<button id="voiceChatButton" class="voice-button" title="Toggle Voice Chat">🎤</button>
+				<button id="muteButton" class="voice-button" title="Drag Me">↔️</button>
+			</div>
+			<!-- <button id="streamWindowButton">📺 Stream Window</button> -->
+        </div>
+        <div id="titlebar">
+            <div id="minimize"></div>
+            <div id="maximize"></div>
+            <div id="close"></div>
+        </div>
+		<script type="text/javascript" charset="UTF-8">
+			document.getElementsByTagName('input')[0].focus();
+		</script>
+    </body>
+</html>

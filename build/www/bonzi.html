@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./css/bonzi.css" />
+        <script src="./js/lib/easeljs.min.js"></script>
+        <script src="./js/lib/preloadjs-0.6.2.min.js"></script>
+        <script src="./js/lib/jquery.min.js"></script>
+        <script src="./js/lib/seedrandom.min.js"></script>
+        <script src="./js/lib/jquery.contextMenu.min.js"></script>
+        <script src="./js/bonzi.js"></script>
+        <script src="./js/lib/socket.io-1.4.5.js"></script>
+        <script src="./js/lib/speakjs/speakClient.js"></script>
+        <script src="./js/lib/jquery.contextMenu.min.js"></script>
+        <script src="./cordova.js"></script>
+        <script src="./js/platform.js"></script>
+        <link rel="stylesheet" type="text/css" href="./css/platform.css" />
+        <script src="./js/script.min.legacy.js"></script>
+    </head>
+    <body>
+
+        <div class="xp_window" id="bonzi_speak_window" style="display:none">
+            <div class="xp_window_bar">
+                <div class="xp_window_close"></div>
+                <div class="xp_window_icon"></div>
+                <div class="xp_window_text">Speak Bonzi, Speak!</div>
+            </div>
+            <div class="bonzi_speak_button" id="bonzi_speak_say">Say it!</div>
+            <div class="bonzi_speak_button xp_window_cancel" id="bonzi_speak_cancel">Cancel</div>
+            <textarea id="bonzi_speak_text"></textarea>
+        </div>
+
+                
+        <div class="xp_window" id="bonzi_chat_window" style="display:none">
+            <div class="xp_window_bar">
+                <div class="xp_window_close"></div>
+                <div class="xp_window_icon"></div>
+                <div class="xp_window_text">BonziWORLD</div>
+            </div>
+            <div class="bonzi_chat_button" id="bonzi_chat_say"></div>
+            <textarea id="bonzi_chat_text"></textarea>
+        </div>
+
+
+        <div id="bonzi_cont" class="bonzi">
+            <canvas id="canvas" class="canvas_bonzi"></canvas>
+            <p class="bubble_xp" id="bonzi_xp_bubble" style="display:none"></p>
+        </div>
+
+        <div id="bonzi_xp_menu" class="xp_menu xp_menu_root">
+            <div class="xp_menu_list">
+                
+                <!-- <div>My Home</div>
+                <div>Search</div>
+                <div>Browse</div>
+                <div class="xp_menu_divider"><div></div></div>
+                <div>Gold Member Access...</div>
+                <div class="xp_menu_divider"><div></div></div>
+                <div>Open Voice Commands Window</div>-->
+                <div id="bonzi_speak">Speak</div>
+                <div id="bonzi_joke">Tell a Joke</div>
+                <div id="bonzi_fact">Tell an Amazing Fact</div>
+                <div id="bonzi_sing">Sing a Song</div>
+                <div id="bonzi_personality">Personality Settings</div>
+                <div onclick="window.open('outlookcal://')">Calendar</div>
+                <!-- <div class="xp_menu_option_submenu">
+                    Play Games <div class="xp_menu_arrow"></div>
+                    <div class="xp_menu xp_submenu">
+                        <div class="xp_menu_list">
+                            <div>Online Games</div>
+                            <div class="xp_menu_divider"><div></div></div>
+                            <div>Bonzi's Beach Checkers</div>
+                            <div>Bonzi's Jungle Jigsaw</div>
+                            <div>Bonzi's Solitaire</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="xp_menu_option_submenu">
+                    Read Stories <div class="xp_menu_arrow"></div>
+                    <div class="xp_menu xp_submenu">
+                        <div class="xp_menu_list">
+                            <div onclick="window.open('https://web.archive.org/web/20220516223341/https://www.youtube.com/user/alpharadd','_blank')">Bonzi and the Alpha-net!</div>
+                            <div>Bonzi and the Internet!</div>
+                            <div>Bonzi and the Polizoof!</div>
+                            <div>Bonzi and the Treasure Chest!</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="xp_menu_divider"><div></div></div>
+                <div class="xp_menu_option_submenu" onclick="window.open('outlookmail://')">
+                    BonziBUDDY E-Mail <div class="xp_menu_arrow"></div>
+                    <div class="xp_menu xp_submenu">
+                        <div class="xp_menu_list">
+                            <div onclick="window.open('outlookmail://')">New Message...</div>
+                            <div onclick="window.open('outlookmail://')">Check for E-Mail...</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="xp_menu_divider"><div></div></div>
+                <div>Share Me With Friends</div>
+                <div>Update Me</div>
+                <div class="xp_menu_option_submenu" onclick="window.open('ms-settings://')">
+                    My Options <div class="xp_menu_arrow"></div>
+                    <div class="xp_menu xp_submenu">
+                        <div class="xp_menu_list">
+                            <div onclick="window.open('ms-settings://')">Settings</div>
+                            <div id="bonzi_personality">Personality</div>
+                            <div>Salutation</div>
+                            <div class="xp_menu_divider"><div></div></div>
+                            <div>Support</div>
+                            <div>Online Registration...</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="xp_menu_divider"><div></div></div>
+                <div>Quiet Mode - F9</div>
+                <div onclick="window.close()">Goodbye</div>-->
+                <div id="xp_menu_animate">Animate!</div>
+                <div id="xp_menu_hide">Hide</div>
+            </div>
+        </div>
+    </body>
+</html>

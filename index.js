@@ -7,25 +7,25 @@ const fs = require('fs-extra');
 
 // Load settings
 try {
-	stats = fs.lstatSync('settings.json');
+        stats = fs.lstatSync('settings.json');
 } catch (e) {
-	// If settings do not yet exist
-	if (e.code == "ENOENT") {
-		try {
-			fs.copySync(
-				'settings.example.json',
-				'settings.json'
-			);
-			console.log("Created new settings file.");
-		} catch(e) {
-			console.log(e);
-			throw "Could not create new settings file.";
-		}
-	// Else, there was a misc error (permissions?)
-	} else {
-		console.log(e);
-		throw "Could not read 'settings.json'.";
-	}
+        // If settings do not yet exist
+        if (e.code == "ENOENT") {
+                try {
+                        fs.copySync(
+                                'settings.example.json',
+                                'settings.json'
+                        );
+                        console.log("Created new settings file.");
+                } catch(e) {
+                        console.log(e);
+                        throw "Could not create new settings file.";
+                }
+        // Else, there was a misc error (permissions?)
+        } else {
+                console.log(e);
+                throw "Could not read 'settings.json'.";
+        }
 }
 
 
@@ -40,212 +40,212 @@ const https = require("https");
 const http = require("http");
 
 app.get('/ivona-eric', function(req, res) {
-	if (req.query.text) {
-					const body = new URLSearchParams({
-						but1: req.query.text,
-						butS: "0",
-						butP: "0",
-						butPauses: "0",
-						butt0: "Submit",
-					}).toString();
-					const rq = https.request(
-						{
-							hostname: "readloud.net",
-							path: "/english/american/3-male-voice-eric.html",
-							method: "POST",
-							headers: {
-								"Content-Type": "application/x-www-form-urlencoded"
-							}
-						},
-						(r) => {
-							let buffers = [];
-							r.on("error", (e) => console.error(e));
-							r.on("data", (b) => buffers.push(b));
-							r.on("end", () => {
-								const html = Buffer.concat(buffers);
-								const beg = html.indexOf("/tmp/");
-								const end = html.indexOf("mp3", beg) + 3;
-								const sub = html.subarray(beg, end).toString();
-	
-								https.get(`https://readloud.net${sub}`, async (r2) => {
-									r2.pipe(res);
-									return res.writeHead(200, {
-									'Content-Type': 'audio/mp3'
-									});
-								});
-							});
-						}
-					).on("error", (e) => console.error(e));
-					rq.end(body);
-	} else {
-	  res.send("Hello World")
-	}
+        if (req.query.text) {
+                                        const body = new URLSearchParams({
+                                                but1: req.query.text,
+                                                butS: "0",
+                                                butP: "0",
+                                                butPauses: "0",
+                                                butt0: "Submit",
+                                        }).toString();
+                                        const rq = https.request(
+                                                {
+                                                        hostname: "readloud.net",
+                                                        path: "/english/american/3-male-voice-eric.html",
+                                                        method: "POST",
+                                                        headers: {
+                                                                "Content-Type": "application/x-www-form-urlencoded"
+                                                        }
+                                                },
+                                                (r) => {
+                                                        let buffers = [];
+                                                        r.on("error", (e) => console.error(e));
+                                                        r.on("data", (b) => buffers.push(b));
+                                                        r.on("end", () => {
+                                                                const html = Buffer.concat(buffers);
+                                                                const beg = html.indexOf("/tmp/");
+                                                                const end = html.indexOf("mp3", beg) + 3;
+                                                                const sub = html.subarray(beg, end).toString();
+        
+                                                                https.get(`https://readloud.net${sub}`, async (r2) => {
+                                                                        r2.pipe(res);
+                                                                        return res.writeHead(200, {
+                                                                        'Content-Type': 'audio/mp3'
+                                                                        });
+                                                                });
+                                                        });
+                                                }
+                                        ).on("error", (e) => console.error(e));
+                                        rq.end(body);
+        } else {
+          res.send("Hello World")
+        }
   })
 app.get('/ivona-eric', function(req, res) {
-	if (req.query.text) {
-					const body = new URLSearchParams({
-						but1: req.query.text,
-						butS: "0",
-						butP: "0",
-						butPauses: "0",
-						butt0: "Submit",
-					}).toString();
-					const rq = https.request(
-						{
-							hostname: "readloud.net",
-							path: "/english/american/3-male-voice-eric.html",
-							method: "POST",
-							headers: {
-								"Content-Type": "application/x-www-form-urlencoded"
-							}
-						},
-						(r) => {
-							let buffers = [];
-							r.on("error", (e) => console.error(e));
-							r.on("data", (b) => buffers.push(b));
-							r.on("end", () => {
-								const html = Buffer.concat(buffers);
-								const beg = html.indexOf("/tmp/");
-								const end = html.indexOf("mp3", beg) + 3;
-								const sub = html.subarray(beg, end).toString();
-	
-								https.get(`https://readloud.net${sub}`, async (r2) => {
-									r2.pipe(res);
-									return res.writeHead(200, {
-									'Content-Type': 'audio/mp3'
-									});
-								});
-							});
-						}
-					).on("error", (e) => console.error(e));
-					rq.end(body);
-	} else {
-	  res.send("Hello World")
-	}
+        if (req.query.text) {
+                                        const body = new URLSearchParams({
+                                                but1: req.query.text,
+                                                butS: "0",
+                                                butP: "0",
+                                                butPauses: "0",
+                                                butt0: "Submit",
+                                        }).toString();
+                                        const rq = https.request(
+                                                {
+                                                        hostname: "readloud.net",
+                                                        path: "/english/american/3-male-voice-eric.html",
+                                                        method: "POST",
+                                                        headers: {
+                                                                "Content-Type": "application/x-www-form-urlencoded"
+                                                        }
+                                                },
+                                                (r) => {
+                                                        let buffers = [];
+                                                        r.on("error", (e) => console.error(e));
+                                                        r.on("data", (b) => buffers.push(b));
+                                                        r.on("end", () => {
+                                                                const html = Buffer.concat(buffers);
+                                                                const beg = html.indexOf("/tmp/");
+                                                                const end = html.indexOf("mp3", beg) + 3;
+                                                                const sub = html.subarray(beg, end).toString();
+        
+                                                                https.get(`https://readloud.net${sub}`, async (r2) => {
+                                                                        r2.pipe(res);
+                                                                        return res.writeHead(200, {
+                                                                        'Content-Type': 'audio/mp3'
+                                                                        });
+                                                                });
+                                                        });
+                                                }
+                                        ).on("error", (e) => console.error(e));
+                                        rq.end(body);
+        } else {
+          res.send("Hello World")
+        }
   })
 app.get('/oddcast-paul', function(req, res) {
-	if (req.query.text) {
-					const q = new URLSearchParams({
-						EID: "3",
-						LID: "1",
-						VID: "2",
-						TXT: req.query.text,
-						EXT: "mp3",
-						FNAME: "",
-						ACC: "15679",
-						SceneID: "2703396",
-						HTTP_ERR: "",
-					}).toString();
-					https
-						.get(
-							{
-								hostname: "cache-a.oddcast.com",
-								path: `/tts/genB.php?${q}`,
-								headers: {
-									"Host": "cache-a.oddcast.com",
-									"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:107.0) Gecko/20100101 Firefox/107.0",
-									"Accept": "*/*",
-									"Accept-Language": "en-US,en;q=0.5",
-									"Accept-Encoding": "gzip, deflate, br",
-									"Origin": "https://www.oddcast.com",
-									"DNT": 1,
-									"Connection": "keep-alive",
-									"Referer": "https://www.oddcast.com/",
-									"Sec-Fetch-Dest": "empty",
-									"Sec-Fetch-Mode": "cors",
-									"Sec-Fetch-Site": "same-site"
-								}
-							}, async (r) => {
-								r.pipe(res);
-							}
-						);
-	} else {
-	  res.send("Hello World")
-	}
+        if (req.query.text) {
+                                        const q = new URLSearchParams({
+                                                EID: "3",
+                                                LID: "1",
+                                                VID: "2",
+                                                TXT: req.query.text,
+                                                EXT: "mp3",
+                                                FNAME: "",
+                                                ACC: "15679",
+                                                SceneID: "2703396",
+                                                HTTP_ERR: "",
+                                        }).toString();
+                                        https
+                                                .get(
+                                                        {
+                                                                hostname: "cache-a.oddcast.com",
+                                                                path: `/tts/genB.php?${q}`,
+                                                                headers: {
+                                                                        "Host": "cache-a.oddcast.com",
+                                                                        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:107.0) Gecko/20100101 Firefox/107.0",
+                                                                        "Accept": "*/*",
+                                                                        "Accept-Language": "en-US,en;q=0.5",
+                                                                        "Accept-Encoding": "gzip, deflate, br",
+                                                                        "Origin": "https://www.oddcast.com",
+                                                                        "DNT": 1,
+                                                                        "Connection": "keep-alive",
+                                                                        "Referer": "https://www.oddcast.com/",
+                                                                        "Sec-Fetch-Dest": "empty",
+                                                                        "Sec-Fetch-Mode": "cors",
+                                                                        "Sec-Fetch-Site": "same-site"
+                                                                }
+                                                        }, async (r) => {
+                                                                r.pipe(res);
+                                                        }
+                                                );
+        } else {
+          res.send("Hello World")
+        }
   })
 app.get('/oddcast-mike', function(req, res) {
-	if (req.query.text) {
-					const q = new URLSearchParams({
-						EID: "1",
-						LID: "1",
-						VID: "2",
-						TXT: req.query.text,
-						EXT: "mp3",
-						FNAME: "",
-						ACC: "15679",
-						SceneID: "2703396",
-						HTTP_ERR: "",
-					}).toString();
-					https
-						.get(
-							{
-								hostname: "cache-a.oddcast.com",
-								path: `/tts/genB.php?${q}`,
-								headers: {
-									"Host": "cache-a.oddcast.com",
-									"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:107.0) Gecko/20100101 Firefox/107.0",
-									"Accept": "*/*",
-									"Accept-Language": "en-US,en;q=0.5",
-									"Accept-Encoding": "gzip, deflate, br",
-									"Origin": "https://www.oddcast.com",
-									"DNT": 1,
-									"Connection": "keep-alive",
-									"Referer": "https://www.oddcast.com/",
-									"Sec-Fetch-Dest": "empty",
-									"Sec-Fetch-Mode": "cors",
-									"Sec-Fetch-Site": "same-site"
-								}
-							}, async (r) => {
-								r.pipe(res);
-							}
-						);
-	} else {
-	  res.send("Hello World")
-	}
+        if (req.query.text) {
+                                        const q = new URLSearchParams({
+                                                EID: "1",
+                                                LID: "1",
+                                                VID: "2",
+                                                TXT: req.query.text,
+                                                EXT: "mp3",
+                                                FNAME: "",
+                                                ACC: "15679",
+                                                SceneID: "2703396",
+                                                HTTP_ERR: "",
+                                        }).toString();
+                                        https
+                                                .get(
+                                                        {
+                                                                hostname: "cache-a.oddcast.com",
+                                                                path: `/tts/genB.php?${q}`,
+                                                                headers: {
+                                                                        "Host": "cache-a.oddcast.com",
+                                                                        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:107.0) Gecko/20100101 Firefox/107.0",
+                                                                        "Accept": "*/*",
+                                                                        "Accept-Language": "en-US,en;q=0.5",
+                                                                        "Accept-Encoding": "gzip, deflate, br",
+                                                                        "Origin": "https://www.oddcast.com",
+                                                                        "DNT": 1,
+                                                                        "Connection": "keep-alive",
+                                                                        "Referer": "https://www.oddcast.com/",
+                                                                        "Sec-Fetch-Dest": "empty",
+                                                                        "Sec-Fetch-Mode": "cors",
+                                                                        "Sec-Fetch-Site": "same-site"
+                                                                }
+                                                        }, async (r) => {
+                                                                r.pipe(res);
+                                                        }
+                                                );
+        } else {
+          res.send("Hello World")
+        }
   })
 app.get('/oddcast-julie', function(req, res) {
-	if (req.query.text) {
-					const q = new URLSearchParams({
-						EID: "3",
-						LID: "1",
-						VID: "3",
-						TXT: req.query.text,
-						EXT: "mp3",
-						FNAME: "",
-						ACC: "15679",
-						SceneID: "2703396",
-						HTTP_ERR: "",
-					}).toString();
-					https
-						.get(
-							{
-								hostname: "cache-a.oddcast.com",
-								path: `/tts/genB.php?${q}`,
-								headers: {
-									"Host": "cache-a.oddcast.com",
-									"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:107.0) Gecko/20100101 Firefox/107.0",
-									"Accept": "*/*",
-									"Accept-Language": "en-US,en;q=0.5",
-									"Accept-Encoding": "gzip, deflate, br",
-									"Origin": "https://www.oddcast.com",
-									"DNT": 1,
-									"Connection": "keep-alive",
-									"Referer": "https://www.oddcast.com/",
-									"Sec-Fetch-Dest": "empty",
-									"Sec-Fetch-Mode": "cors",
-									"Sec-Fetch-Site": "same-site"
-								}
-							}, async (r) => {
-								r.pipe(res);
-							}
-						);
-	} else {
-	  res.send("Hello World")
-	}
+        if (req.query.text) {
+                                        const q = new URLSearchParams({
+                                                EID: "3",
+                                                LID: "1",
+                                                VID: "3",
+                                                TXT: req.query.text,
+                                                EXT: "mp3",
+                                                FNAME: "",
+                                                ACC: "15679",
+                                                SceneID: "2703396",
+                                                HTTP_ERR: "",
+                                        }).toString();
+                                        https
+                                                .get(
+                                                        {
+                                                                hostname: "cache-a.oddcast.com",
+                                                                path: `/tts/genB.php?${q}`,
+                                                                headers: {
+                                                                        "Host": "cache-a.oddcast.com",
+                                                                        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:107.0) Gecko/20100101 Firefox/107.0",
+                                                                        "Accept": "*/*",
+                                                                        "Accept-Language": "en-US,en;q=0.5",
+                                                                        "Accept-Encoding": "gzip, deflate, br",
+                                                                        "Origin": "https://www.oddcast.com",
+                                                                        "DNT": 1,
+                                                                        "Connection": "keep-alive",
+                                                                        "Referer": "https://www.oddcast.com/",
+                                                                        "Sec-Fetch-Dest": "empty",
+                                                                        "Sec-Fetch-Mode": "cors",
+                                                                        "Sec-Fetch-Site": "same-site"
+                                                                }
+                                                        }, async (r) => {
+                                                                r.pipe(res);
+                                                        }
+                                                );
+        } else {
+          res.send("Hello World")
+        }
   })
 
 if (settings.express.serveStatic)
-	app.use(express.static('./build/www'));
+        app.use(express.static('./build/www'));
 var server = require('http').createServer(app);
 
 // Init socket.io
@@ -271,10 +271,10 @@ const Ban = require('./ban.js');
 Ban.init();
 
 // Start actually listening
-server.listen(port, function () {
-	console.log(
-		"Welcome to BonziWORLD Revived! Time to meme!\nServer listening at port " + port
-	);
+server.listen(port, '0.0.0.0', function () {
+        console.log(
+                "Welcome to BonziWORLD Revived! Time to meme!\nServer listening at 0.0.0.0:" + port
+        );
 });
 app.use(express.static(__dirname + '/public'));
 

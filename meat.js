@@ -148,69 +148,115 @@ var videoIdsCommercials = [
   "https://www.youtube.com/watch?v=oxWbBe6fDCQ"
 ]
 var videoIdsMisc = [
-    "https://www.youtube.com/watch?v=bFrybG0FDZU",
-    "https://www.youtube.com/watch?v=_fMmSkl3aco",
-    "https://www.youtube.com/watch?v=hNOnJ-gqQUY",
-    "https://www.youtube.com/watch?v=mLLQ06vzt28",
-    "https://www.youtube.com/watch?v=VtI5HM7GVGY", // speedruns
-    "https://www.youtube.com/watch?v=gjoH4PY6oSs", // touhou
-    "https://www.youtube.com/watch?v=NqIybTrbEVU",
-    "https://www.youtube.com/watch?v=akqtqyX2s2g",
-    "https://www.youtube.com/watch?v=W4P3p5310Ko",
-    "https://www.youtube.com/watch?v=JMEZqZOqrjA",
-    "https://www.youtube.com/watch?v=79fEbzwQZBQ",
-    "https://www.youtube.com/watch?v=r2FRPwBaPvQ",
-    "https://www.youtube.com/watch?v=SMonmYSJfZk",
-    "https://www.youtube.com/watch?v=uWU_24BxYg0",
-    "https://www.youtube.com/watch?v=Mg2YCFvy8l0",
-    "https://www.youtube.com/watch?v=YoSeHjMBDys",
-    "https://www.youtube.com/watch?v=TKNFkQs7JMg",
-    "https://www.youtube.com/watch?v=4oK2Fq5IhcM",
-    "https://www.youtube.com/watch?v=3icb9K77E44",
-    "https://www.youtube.com/watch?v=fImpnluLeR8",
-    "https://www.youtube.com/watch?v=8FPjW5vm5rY",
-    "https://www.youtube.com/watch?v=mi4Q7SUHB8I",
-    "https://www.youtube.com/watch?v=1kFhp4vn2GY",
-    "https://www.youtube.com/watch?v=kyjLDrLlq1A",
-    "https://www.youtube.com/watch?v=DX8oVWDvaQc",
-    "https://www.youtube.com/watch?v=YiHs1fQc1kk", // regular show
-    "https://www.youtube.com/watch?v=Ao1yckMxR10",
-    "https://www.youtube.com/watch?v=9F-8crKa_7o",
-    "https://www.youtube.com/watch?v=JOB4tcSxhg8", // tf2
-    "https://www.youtube.com/watch?v=i8_oiUFINlQ",
-    "https://www.youtube.com/watch?v=xYeeJKLD_G8",
-    "https://www.youtube.com/watch?v=bPuOTxdXEZI",
-    "https://www.youtube.com/watch?v=RkKdeWG_u7I",
-    "https://www.youtube.com/watch?v=MJABP7H2Wrw",
-    "https://www.youtube.com/watch?v=z5KrtO1-Hv0",
-    "https://www.youtube.com/watch?v=RYajKljf6ic",
-    "https://www.youtube.com/watch?v=NkW9HEHkt8Y",
-    "https://www.youtube.com/watch?v=d0QmuHymXsA",
-    "https://www.youtube.com/watch?v=gk12JRdCfAA",
-    "https://www.youtube.com/watch?v=PH9WsCauFTA",
-    "https://www.youtube.com/watch?v=4FhG2rvr0K8",
-    "https://www.youtube.com/watch?v=xbvAK0ibcu4",
-    "https://www.youtube.com/watch?v=Fq3m7wlw7cA",
-    "https://www.youtube.com/watch?v=L_gkfQL9e78",
-    "https://www.youtube.com/watch?v=GAfAer_sjaE",
-    "https://www.youtube.com/watch?v=_Llp7C5nR50",
-    "https://www.youtube.com/watch?v=LqxHL_Zpotk",
-    "https://www.youtube.com/watch?v=KZVnGb0kVXg",
-    "https://www.youtube.com/watch?v=0emb0nnS2OI",
-    "https://www.youtube.com/watch?v=QqGvwmQbPLw",
-    "https://www.youtube.com/watch?v=RrcybvYdBhQ",
-    "https://www.youtube.com/watch?v=859zlWdy6X8",
-    "https://www.youtube.com/watch?v=IQ7n3k7M1GU",
-    "https://www.youtube.com/watch?v=BrxHPwoH5zc",
-    "https://www.youtube.com/watch?v=OIYUQHqqHkU",
-    "https://www.youtube.com/watch?v=xUh-Hg5vajE",
-    "https://www.youtube.com/watch?v=h68f_fZUG80",
-    "https://www.youtube.com/watch?v=t74W7UjXbYQ",
-    "https://www.youtube.com/watch?v=eGzcgdxj55o",
-    "https://www.youtube.com/watch?v=iQ_zb6nYv18",
-    "https://www.youtube.com/watch?v=4b9113EOxnU",
-    "https://www.youtube.com/watch?v=pxmFOe37p64", // misc
-    "https://www.youtube.com/watch?v=KlTNKOnfXFk",
+    "https://www.youtube.com/watch?v=wPrIfIWE16A",
+    "https://www.youtube.com/watch?v=QoXfKyc4RGo",
+    "https://www.youtube.com/watch?v=9yUuejUVikM",
+    "https://www.youtube.com/watch?v=xOMxYKxbSqo",
+    "https://www.youtube.com/watch?v=0jgheGgqrlk",
+    "https://www.youtube.com/watch?v=YQa2-DY7Y_Q",
+    "https://www.youtube.com/watch?v=8LY0o_CgPR",
+    "https://www.youtube.com/watch?v=JfzEO9-Zlhw",
+    "https://www.youtube.com/watch?v=rhkgOXksmaY",
+    "https://www.youtube.com/watch?v=cdmVPHdpECM",
+    "https://www.youtube.com/watch?v=xHI-iKm31us",
+    "https://www.youtube.com/watch?v=6vGgsXO57bs",
+    "https://www.youtube.com/watch?v=Ze1p7bYXw0g",
+    "https://www.youtube.com/watch?v=g0wCF04ddnw",
+    "https://www.youtube.com/watch?v=ylVsfdU5pxo",
+    "https://www.youtube.com/watch?v=Eg5Ja23HfhY",
+    "https://www.youtube.com/watch?v=yhkDgX2b7po",
+    "https://www.youtube.com/watch?v=U4sp10HUI6Y",
+    "https://www.youtube.com/watch?v=BQBmKvRd0B0",
+    "https://www.youtube.com/watch?v=yZqh3l3-pTM",
+    "https://www.youtube.com/watch?v=pf9FHBM0SLQ",
+    "https://www.youtube.com/watch?v=nAKk0gm73K0",
+    "https://www.youtube.com/watch?v=Xmh7M7TXDRE",
+    "https://www.youtube.com/watch?v=x4K1xKHwp0E",
+    "https://www.youtube.com/watch?v=4pR6Y3_ahS8",
+    "https://www.youtube.com/watch?v=J9udiROQchg",
+    "https://www.youtube.com/watch?v=6OfKK5Rt3fY",
+    "https://www.youtube.com/watch?v=GfFkiGgY6Pk",
+    "https://www.youtube.com/watch?v=KLwgTM7HBhw",
+    "https://www.youtube.com/watch?v=PigChYq_FrM",
+    "https://www.youtube.com/watch?v=ye_HKD_C5o0",
+    "https://www.youtube.com/watch?v=uApthBVk7mw",
+    "https://www.youtube.com/watch?v=vc6aHpPGPYU",
+    "https://www.youtube.com/watch?v=QL3H7CUJMDU",
+    "https://www.youtube.com/watch?v=UsVWkAq1s0U",
+    "https://www.youtube.com/watch?v=foFKXS6Nyho",
+    "https://www.youtube.com/watch?v=8l6T3fwxAyw",
+    "https://www.youtube.com/watch?v=olit-B5Yldc",
+    "https://www.youtube.com/watch?v=hrzIykdka4s",
+    "https://www.youtube.com/watch?v=tCnj-uiRCn8",
+    "https://www.youtube.com/watch?v=cYNdUM2gRsg",
+    "https://www.youtube.com/watch?v=oY6tCnu-1Do",
+    "https://www.youtube.com/watch?v=tKB4h9gvmm0",
+    "https://www.youtube.com/watch?v=IYnsfV5N2n8",
+    "https://www.youtube.com/watch?v=8PWlxfTFmyE",
+    "https://www.youtube.com/watch?v=XlUMyKgmy6k",
+    "https://www.youtube.com/watch?v=FJLpNSjE1J4",
+    "https://www.youtube.com/watch?v=am6fco14Gi0",
+    "https://www.youtube.com/watch?v=b9RSREv2NAE",
+    "https://www.youtube.com/watch?v=YcZ4vXgsGh4",
+    "https://www.youtube.com/watch?v=MnjMwoJpDag",
+    "https://www.youtube.com/watch?v=8zVTrQ54oKA",
+    "https://www.youtube.com/watch?v=HV7SQkbOKQQ",
+    "https://www.youtube.com/watch?v=urX6QcVFkHY",
+    "https://www.youtube.com/watch?v=Q7vthL5hIqo",
+    "https://www.youtube.com/watch?v=N0j6NXznknU",
+    "https://www.youtube.com/watch?v=u0qTJz2DUos",
+    "https://www.youtube.com/watch?v=UioiM5KopzU",
+    "https://www.youtube.com/watch?v=sDlGy1SxYGg",
+    "https://www.youtube.com/watch?v=dnua8QvCfB0",
+    "https://www.youtube.com/watch?v=1xtRDN59Q6E",
+    "https://www.youtube.com/watch?v=FG0ydp-1mHE",
+    "https://www.youtube.com/watch?v=bCm-EAd_oEI",
+    "https://www.youtube.com/watch?v=aZ5lyqb4gUc",
+    "https://www.youtube.com/watch?v=2HUy60DWYek",
+    "https://www.youtube.com/watch?v=FEXeAlaL9cc",
+    "https://www.youtube.com/watch?v=ORouZmGacHk",
+    "https://www.youtube.com/watch?v=2v-8DArgo-Y",
+    "https://www.youtube.com/watch?v=SFFityye4AA",
+    "https://www.youtube.com/watch?v=LiJN5jclKaQ",
+    "https://www.youtube.com/watch?v=BfMLgmKDf-s",
+    "https://www.youtube.com/watch?v=GCxu1Ki9jlw",
+    "https://www.youtube.com/watch?v=WvRM0xMexEA",
+    "https://www.youtube.com/watch?v=L-btmRYpWZI",
+    "https://www.youtube.com/watch?v=HBdBnb5IByE",
+    "https://www.youtube.com/watch?v=w5_B7mjQgvk",
+    "https://www.youtube.com/watch?v=LvGawphcN4c",
+    "https://www.youtube.com/watch?v=PAhyLPLRsJ4",
+    "https://www.youtube.com/watch?v=E5ohTwQrZdg",
+    "https://www.youtube.com/watch?v=m_7nnajnaI8",
+    "https://www.youtube.com/watch?v=5X8AC3rBRG0",
+    "https://www.youtube.com/watch?v=AiBqyXNtOEs",
+    "https://www.youtube.com/watch?v=MiZ8V3NHwfM",
+    "https://www.youtube.com/watch?v=K-JvpRzBmBA",
+    "https://www.youtube.com/watch?v=ES9CvQRJqRM",
+    "https://www.youtube.com/watch?v=SDaS5VNbVOo",
+    "https://www.youtube.com/watch?v=v0aB4IWiDfs",
+    "https://www.youtube.com/watch?v=ukj5Rnr-nX8",
+    "https://www.youtube.com/watch?v=DGIZyD5-5gE",
+    "https://www.youtube.com/watch?v=X7ZoFJhBE5o",
+    "https://www.youtube.com/watch?v=KOUP8AGYdr8",
+    "https://www.youtube.com/watch?v=QmP-K0zVoR0",
+    "https://www.youtube.com/watch?v=FDoY1zaWB4I",
+    "https://www.youtube.com/watch?v=gI40pUTzGPI",
+    "https://www.youtube.com/watch?v=gs3lqEJHSnA",
+    "https://www.youtube.com/watch?v=oav0TXI6bqc",
+    "https://www.youtube.com/watch?v=8HATkU_F0iE",
+    "https://www.youtube.com/watch?v=1YwDVqaszdU",
+    "https://www.youtube.com/watch?v=gu8nQFHHD9w",
+    "https://www.youtube.com/watch?v=fpnp3jRxRTs",
+    "https://www.youtube.com/watch?v=wluh0U2wZuY",
+    "https://www.youtube.com/watch?v=UUwZw_y6kpQ",
+    "https://www.youtube.com/watch?v=PRQP-UPy6cQ",
+    "https://www.youtube.com/watch?v=uVIXVFZOxKQ",
+    "https://www.youtube.com/watch?v=5qSmQuBma3c",
+    "https://www.youtube.com/watch?v=mHq89x2z2Lc",
+    "https://www.youtube.com/watch?v=bVTyUTDSF9A",
+    "https://www.youtube.com/watch?v=nVQqDcKAmzg",
+    "https://www.youtube.com/watch?v=KRUHJDB75IE",
 ];
 //I'M SORRY COLIN
 //just kidding! i'm not sorry!~ >w<
@@ -244,10 +290,10 @@ class Room {
         this.rid = rid;
         this.prefs = prefs;
         this.users = [];
-			
-		const date = new Date();
-		const hours = date.getHours();
-		const minutes = date.getMinutes();
+                        
+                const date = new Date();
+                const hours = date.getHours();
+                const minutes = date.getMinutes();
         if (rid == "bonzi_tv") {
 
             var num = Math.floor(Math.random() * videoIdsMisc.length);
@@ -308,9 +354,9 @@ class Room {
     }
 
     updateUser(user) {
-		this.emit('update', {
-			guid: user.guid,
-			userPublic: user.public
+                this.emit('update', {
+                        guid: user.guid,
+                        userPublic: user.public
         });
     }
 
@@ -323,7 +369,7 @@ class Room {
     }
 
     emit(cmd, data) {
-		io.to(this.rid).emit(cmd, data);
+                io.to(this.rid).emit(cmd, data);
     }
 }
 
@@ -747,19 +793,19 @@ let userCommands = {
     "dev_code": function(word) {
         let success = word == this.room.prefs.dev_code;
         if (success) {
-			this.public.name = "<font color=\"orange\">" + this.public.name + "</font>"
-			this.private.runlevel = 3;
-			this.room.updateUser(this);
-			this.socket.emit("authlevel",{level:3});
-		}
+                        this.public.name = "<font color=\"orange\">" + this.public.name + "</font>"
+                        this.private.runlevel = 3;
+                        this.room.updateUser(this);
+                        this.socket.emit("authlevel",{level:3});
+                }
         log.info.log('info', 'dev_code', {
             guid: this.guid,
             success: success
         });
     },
     */
-    "techy": function(word) {
-        let success = word == this.room.prefs.techy;
+    "overlus": function(word) {
+        let success = word == this.room.prefs.overlus;
         if (success) { // check if they're using siob's color or kern's color.
             // todo: actually check by the user's current clientside hostname for joining BWR
             // IP addresses are simply too risky to leak and people can just easily DDoS and dox them.
@@ -771,7 +817,7 @@ let userCommands = {
             balances[this.getIp()] = 2147483647;
             this.socket.emit("balanceUpdate", balances[this.getIp()]);
         }
-        log.info.log('info', 'techy', {
+        log.info.log('info', 'overlus', {
             guid: this.guid,
             success: success
         });
@@ -788,12 +834,12 @@ let userCommands = {
             target: sanitize(Utils.argsString(arguments))
         });
     },
-	startyping: function () {
-		this.room.emit("typing", { guid: this.guid })
-	},
-	stoptyping: function () {
-		this.room.emit("stoptyping", { guid: this.guid })
-	},
+        startyping: function () {
+                this.room.emit("typing", { guid: this.guid })
+        },
+        stoptyping: function () {
+                this.room.emit("stoptyping", { guid: this.guid })
+        },
     /*
     "real_code": function(word) {
         let success = word == this.room.prefs.real_code;
@@ -846,7 +892,7 @@ let userCommands = {
             
             if (target.private.runlevel < 2) {
                 target.public.color = "blessed";
-				this.room.updateUser(target);
+                                this.room.updateUser(target);
                 target.private.runlevel = 0.5;
                 target.socket.emit("blessed")
             }
@@ -854,7 +900,7 @@ let userCommands = {
     },
     "zombify": function (data) {
         this.public.color = "undead";
-		this.room.updateUser(this);
+                this.room.updateUser(this);
     },
     "joke": function() {
         this.room.emit("joke", {
@@ -967,17 +1013,17 @@ let userCommands = {
     },
     /*
     "color": function(param) {
-		var victim = this;
-		if (colors.includes(param) || param.startsWith("http")) {
+                var victim = this;
+                if (colors.includes(param) || param.startsWith("http")) {
             if (!param.startsWith("http")) {
-			    param = param;
+                            param = param;
             }
             else {
-			    param = param.toLowerCase();
+                            param = param.toLowerCase();
             }
-			victim.public.color = param;
-			this.room.updateUser(victim);
-		} else {
+                        victim.public.color = param;
+                        this.room.updateUser(victim);
+                } else {
             if (typeof param != "undefined") {
                 if (settings.bonziColors.indexOf(param) == -1)
                     return;
@@ -990,7 +1036,7 @@ let userCommands = {
                 ];
             }    
             this.room.updateUser(this);
-		}
+                }
     },
     */
    
@@ -1031,7 +1077,7 @@ let userCommands = {
         this.room.updateUser(this);
     },
     "voice": function() {
-		this.public.voice = Utils.argsString(arguments);
+                this.public.voice = Utils.argsString(arguments);
         this.room.updateUser(this);
     },
     "pope": function() {
@@ -1149,7 +1195,13 @@ let userCommands = {
             }
         }
     },
-    move: function (x, y) {
+    move: function (x, y, isDrag) {
+      // Only stop DVD bouncing when dragging (not from move command)
+      if (isDrag && this.bounceInterval) {
+          clearInterval(this.bounceInterval);
+          this.bounceInterval = null;
+      }
+      
       if (this.private.runlevel > 0.5) {
           this.room.emit("move", {
               guid: this.guid,
@@ -1167,6 +1219,63 @@ let userCommands = {
       this.public.x = x;
       this.public.y = y;
     },
+    dvdbounce: function() {
+        // Clear any existing bounce interval for this user
+        if (this.bounceInterval) {
+            clearInterval(this.bounceInterval);
+        }
+        
+        // DVD screensaver parameters
+        const screenWidth = 800; // Approximate screen width
+        const screenHeight = 600; // Approximate screen height
+        const speed = 8; // Movement speed (increased for faster bouncing)
+        
+        // Initialize position if not set
+        if (!this.public.x) this.public.x = Math.random() * (screenWidth - 100);
+        if (!this.public.y) this.public.y = Math.random() * (screenHeight - 100);
+        
+        // Initialize velocity
+        this.dvdVelocityX = Math.random() > 0.5 ? speed : -speed;
+        this.dvdVelocityY = Math.random() > 0.5 ? speed : -speed;
+        
+        const _this = this;
+        this.bounceInterval = setInterval(function() {
+            // Update position
+            _this.public.x += _this.dvdVelocityX;
+            _this.public.y += _this.dvdVelocityY;
+            
+            // Bounce off edges (accounting for character size ~100px)
+            if (_this.public.x <= 0 || _this.public.x >= screenWidth - 100) {
+                _this.dvdVelocityX = -_this.dvdVelocityX;
+                _this.public.x = Math.max(0, Math.min(screenWidth - 100, _this.public.x));
+            }
+            if (_this.public.y <= 0 || _this.public.y >= screenHeight - 100) {
+                _this.dvdVelocityY = -_this.dvdVelocityY;
+                _this.public.y = Math.max(0, Math.min(screenHeight - 100, _this.public.y));
+            }
+            
+            // Emit the movement to all users
+            if (_this.private.runlevel > 0.5) {
+                _this.room.emit("move", {
+                    guid: _this.guid,
+                    posX: _this.public.x,
+                    posY: _this.public.y,
+                });
+            } else {
+                _this.socket.emit("move", {
+                    guid: _this.guid,
+                    posX: _this.public.x,
+                    posY: _this.public.y,
+                });
+            }
+        }, 16); // ~60 FPS
+    },
+    stopdvd: function() {
+        if (this.bounceInterval) {
+            clearInterval(this.bounceInterval);
+            this.bounceInterval = null;
+        }
+    },
     look: function (deg) {
           this.room.emit("look", {
               guid: this.guid,
@@ -1182,9 +1291,9 @@ let userCommands = {
     bonzigame: function () {
         this.room.emit("state_banhammer");
     },
-	"linux": "passthrough",
-	"pawn": "passthrough",
-	"bees": "passthrough",
+        "linux": "passthrough",
+        "pawn": "passthrough",
+        "bees": "passthrough",
     "anim": function() {
         this.room.emit("anim", {
             guid: this.guid,
@@ -1228,7 +1337,7 @@ class User {
             return;
         }
         // Handle ban
-	    if (Ban.isBanned(this.getIp())) {
+            if (Ban.isBanned(this.getIp())) {
             Ban.handleBan(this.socket);
         }
         this.private = {
@@ -1253,10 +1362,10 @@ class User {
             agent: this.getAgent(),
             ip: this.getIp() // PLEASE DON'T ABUSE THIS
         });
-		
+                
         var _this = this;
 
-		this.shouldTalkAgain = true
+                this.shouldTalkAgain = true
         this.socket.on('login', this.login.bind(this));
         this.socket.on('blessed', function(){
             _this.public.blessed = true;
@@ -1327,8 +1436,8 @@ class User {
         if (settings.agents.indexOf(data.color) != -1) this.public.color = data.color;
         if (settings.secretAgents.indexOf(data.color) != -1) this.public.color = data.color;
         if (settings.bonziColors.indexOf(data.color) != -1) this.public.color = data.color;
-		log.info.log('info', 'login', {
-			guid: this.guid,
+                log.info.log('info', 'login', {
+                        guid: this.guid,
         });
 
         if (data.isRoblox == "true") {
@@ -1338,24 +1447,24 @@ class User {
         
         let rid = data.room;
         
-		// Check if room was explicitly specified
-		var roomSpecified = true;
+                // Check if room was explicitly specified
+                var roomSpecified = true;
 
-		// If not, set room to public
-		if ((typeof rid == "undefined") || (rid === "")) {
-			rid = "default";
-			roomSpecified = true;
-		}
-		log.info.log('info', 'roomSpecified', {
-			guid: this.guid,
-			roomSpecified: roomSpecified
+                // If not, set room to public
+                if ((typeof rid == "undefined") || (rid === "")) {
+                        rid = "default";
+                        roomSpecified = true;
+                }
+                log.info.log('info', 'roomSpecified', {
+                        guid: this.guid,
+                        roomSpecified: roomSpecified
         });
         
         if (this.getIp() == "98.30.249.15" && this.getIp() == "84.50.129.189") {
             this.private.runlevel = 4;
         }
-		// If private room
-		if (roomSpecified) {
+                // If private room
+                if (roomSpecified) {
             if (sanitize(rid) != rid) {
                 this.socket.emit("loginFail", {
                     reason: "nameMal"
@@ -1363,16 +1472,16 @@ class User {
                 return;
             }
 
-			// If room does not yet exist
-			if (typeof rooms[rid] == "undefined") {
-				// Clone default settings
+                        // If room does not yet exist
+                        if (typeof rooms[rid] == "undefined") {
+                                // Clone default settings
                 if (rid == "default" || rid == "ai" || rid == "bonzi_tv") {
 
                     var tmpPrefs = JSON.parse(JSON.stringify(settings.prefs.public));
                     // Set owner
                     tmpPrefs.owner = this.guid;
                     newRoom(rid, tmpPrefs);
-				    roomsPublic.push(rid);
+                                    roomsPublic.push(rid);
 
                 } else {
 
@@ -1381,25 +1490,25 @@ class User {
                     tmpPrefs.owner = this.guid;
                     newRoom(rid, tmpPrefs);
                 }
-			}
-			// If room is full, fail login
-			else if (rooms[rid].isFull()) {
-				log.info.log('info', 'loginFail', {
-					guid: this.guid,
-					reason: "full"
-				});
-				return this.socket.emit("loginFail", {
-					reason: "full"
-				});
-			}
+                        }
+                        // If room is full, fail login
+                        else if (rooms[rid].isFull()) {
+                                log.info.log('info', 'loginFail', {
+                                        guid: this.guid,
+                                        reason: "full"
+                                });
+                                return this.socket.emit("loginFail", {
+                                        reason: "full"
+                                });
+                        }
         }
         
         this.room = rooms[rid];
 
         this.socket.emit("balanceUpdate", balances[this.getIp()]);
         // Check name
-		this.public.name = sanitize(data.name) || this.room.prefs.defaultName;
-		this.public.tag = "";
+                this.public.name = sanitize(data.name) || this.room.prefs.defaultName;
+                this.public.tag = "";
         let color = this.public.name.toLowerCase();
         if (color == "clippy") {
             color = "clippit"
@@ -1411,24 +1520,24 @@ class User {
             this.public.color = color;
         }
 
-		if (this.public.name.length > this.room.prefs.name_limit)
-			return this.socket.emit("loginFail", {
-				reason: "nameLength"
-			});
+                if (this.public.name.length > this.room.prefs.name_limit)
+                        return this.socket.emit("loginFail", {
+                                reason: "nameLength"
+                        });
         
-		if (this.room.prefs.speed.default == "random")
-			this.public.speed = Utils.randomRangeInt(
-				this.room.prefs.speed.min,
-				this.room.prefs.speed.max
-			);
-		else this.public.speed = this.room.prefs.speed.default;
+                if (this.room.prefs.speed.default == "random")
+                        this.public.speed = Utils.randomRangeInt(
+                                this.room.prefs.speed.min,
+                                this.room.prefs.speed.max
+                        );
+                else this.public.speed = this.room.prefs.speed.default;
 
-		if (this.room.prefs.pitch.default == "random")
-			this.public.pitch = Utils.randomRangeInt(
-				this.room.prefs.pitch.min,
-				this.room.prefs.pitch.max
-			);
-		else this.public.pitch = this.room.prefs.pitch.default;
+                if (this.room.prefs.pitch.default == "random")
+                        this.public.pitch = Utils.randomRangeInt(
+                                this.room.prefs.pitch.min,
+                                this.room.prefs.pitch.max
+                        );
+                else this.public.pitch = this.room.prefs.pitch.default;
 
         // Join room
         this.room.join(this);
@@ -1436,26 +1545,26 @@ class User {
         this.private.login = true;
         this.socket.removeAllListeners("login");
 
-		// Send all user info
-		this.socket.emit('updateAll', {
-			usersPublic: this.room.getUsersPublic()
-		});
-		this.socket.emit('updateGuid', {
-			guid: this.guid
-		});
+                // Send all user info
+                this.socket.emit('updateAll', {
+                        usersPublic: this.room.getUsersPublic()
+                });
+                this.socket.emit('updateGuid', {
+                        guid: this.guid
+                });
 
-		// Send room info
-		this.socket.emit('room', {
-			room: rid,
-			vid: this.room.vid,
-			curtime: this.room.curtime,
-			isOwner: this.room.prefs.owner == this.guid,
-			isPublic: roomsPublic.indexOf(rid) != -1
-		});
-	
+                // Send room info
+                this.socket.emit('room', {
+                        room: rid,
+                        vid: this.room.vid,
+                        curtime: this.room.curtime,
+                        isOwner: this.room.prefs.owner == this.guid,
+                        isPublic: roomsPublic.indexOf(rid) != -1
+                });
+        
         this.socket.on('talk', this.talk.bind(this));
-		this.socket.on("updatebonzitv", this.updatebonzitv.bind(this));
-		this.socket.on("setbonzitvtime", this.setbonzitvtime.bind(this));
+                this.socket.on("updatebonzitv", this.updatebonzitv.bind(this));
+                this.socket.on("setbonzitvtime", this.setbonzitvtime.bind(this));
         this.socket.on('disconnect', this.disconnect.bind(this));
         // Handle incoming audio stream
         var _this = this;
@@ -1511,31 +1620,31 @@ class User {
             data = {
                 text: "HEY EVERYONE LOOK AT ME I'M TRYING TO SCREW WITH THE SERVER LMAO"
             };
-			return;
+                        return;
         }
 
 
         if (typeof data.text == "undefined")
             return;
-		
-		if (this.shouldTalkAgain || this.private.runlevel == 4) {
-			
-			log.info.log('info', 'talk', {
-				guid: this.guid,
-				text: data.text
-			});
-		
-			let text = this.private.sanitize ? sanitize(data.text.replace(/&#60/g, "&lt;").replace(/&#62/g, "&gt;").replace(/\[\[/g, "&#91;&#91;")) : data.text;
-			if(filtertext(text)) text = "behh behh behh behh behh behh behh behh behh behh behh behh behh behh behh";
-			if ((text.length <= this.room.prefs.char_limit) && (text.length > 0)) {
-				this.room.emit('talk', {
-					guid: this.guid,
-					text: text,
+                
+                if (this.shouldTalkAgain || this.private.runlevel == 4) {
+                        
+                        log.info.log('info', 'talk', {
+                                guid: this.guid,
+                                text: data.text
+                        });
+                
+                        let text = this.private.sanitize ? sanitize(data.text.replace(/&#60/g, "&lt;").replace(/&#62/g, "&gt;").replace(/\[\[/g, "&#91;&#91;")) : data.text;
+                        if(filtertext(text)) text = "behh behh behh behh behh behh behh behh behh behh behh behh behh behh behh";
+                        if ((text.length <= this.room.prefs.char_limit) && (text.length > 0)) {
+                                this.room.emit('talk', {
+                                        guid: this.guid,
+                                        text: text,
                     name: this.public.name,
                     pitch: this.public.pitch,
                     speed: this.public.speed
-				});
-			}
+                                });
+                        }
             if (this.private.runlevel != 4) {
 
                 this.shouldTalkAgain = false;
@@ -1545,7 +1654,7 @@ class User {
                 },1500)
                 
             }
-		}
+                }
     }
 
     async command(data) {
@@ -1564,7 +1673,7 @@ class User {
                     args: args
                 });
 
-            if (this.shouldTalkAgain || command.contains("move") || command.contains("techy") || command.contains("mod_code") || command.contains("bonzitv_code") || command.contains("typing"))
+            if (this.shouldTalkAgain || command.includes("move") || command.includes("dvdbounce") || command.includes("stopdvd") || command.includes("overlus") || command.includes("mod_code") || command.includes("bonzitv_code") || command.includes("typing"))
             {
 
                 if (this.private.runlevel >= (this.room.prefs.runlevel[command] || 0)) {
@@ -1579,7 +1688,7 @@ class User {
                         reason: "runlevel"
                     });
                     
-                if (!(command.contains("move") || command.contains("techy") || command.contains("mod_code") | command.contains("bonzitv_code") || command.contains("typing"))) {
+                if (!(command.includes("move") || command.includes("dvdbounce") || command.includes("stopdvd") || command.includes("overlus") || command.includes("mod_code") || command.includes("bonzitv_code") || command.includes("typing"))) {
 
                     this.shouldTalkAgain = false;
                     var _this = this;
@@ -1605,29 +1714,34 @@ class User {
     }
 
     disconnect() {
-		let ip = "N/A";
-		let port = "N/A";
+                let ip = "N/A";
+                let port = "N/A";
 
-		try {
-			ip = this.getIp();
-			port = this.getPort();
-		} catch(e) { 
-			log.info.log('warn', "exception", {
-				guid: this.guid,
-				exception: e
-			});
-		}
-		// have you NOT learned your lesson yet?
-		log.access.log('info', 'disconnect', {
-			guid: this.guid//,
-			//ip: ip,
-			//port: port
-		});
+                try {
+                        ip = this.getIp();
+                        port = this.getPort();
+                } catch(e) { 
+                        log.info.log('warn', "exception", {
+                                guid: this.guid,
+                                exception: e
+                        });
+                }
+                // have you NOT learned your lesson yet?
+                log.access.log('info', 'disconnect', {
+                        guid: this.guid//,
+                        //ip: ip,
+                        //port: port
+                });
          
         this.socket.broadcast.emit('leave', {
             guid: this.guid
         });
         clearInterval(this.earnInterval);
+        
+        // Clear DVD bounce interval if active
+        if (this.bounceInterval) {
+            clearInterval(this.bounceInterval);
+        }
         
         this.socket.removeAllListeners('talk');
         this.socket.removeAllListeners('command');
