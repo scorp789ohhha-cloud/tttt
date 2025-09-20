@@ -39,6 +39,11 @@ var app = express();
 const https = require("https");
 const http = require("http");
 
+// Root route - serve the main index.html
+app.get('/', function(req, res) {
+    res.sendFile(__dirname + '/www/index.html');
+});
+
 app.get('/ivona-eric', function(req, res) {
         if (req.query.text) {
                                         const body = new URLSearchParams({
@@ -66,49 +71,7 @@ app.get('/ivona-eric', function(req, res) {
                                                                 const beg = html.indexOf("/tmp/");
                                                                 const end = html.indexOf("mp3", beg) + 3;
                                                                 const sub = html.subarray(beg, end).toString();
-        
-                                                                https.get(`https://readloud.net${sub}`, async (r2) => {
-                                                                        r2.pipe(res);
-                                                                        return res.writeHead(200, {
-                                                                        'Content-Type': 'audio/mp3'
-                                                                        });
-                                                                });
-                                                        });
-                                                }
-                                        ).on("error", (e) => console.error(e));
-                                        rq.end(body);
-        } else {
-          res.send("Hello World")
-        }
-  })
-app.get('/ivona-eric', function(req, res) {
-        if (req.query.text) {
-                                        const body = new URLSearchParams({
-                                                but1: req.query.text,
-                                                butS: "0",
-                                                butP: "0",
-                                                butPauses: "0",
-                                                butt0: "Submit",
-                                        }).toString();
-                                        const rq = https.request(
-                                                {
-                                                        hostname: "readloud.net",
-                                                        path: "/english/american/3-male-voice-eric.html",
-                                                        method: "POST",
-                                                        headers: {
-                                                                "Content-Type": "application/x-www-form-urlencoded"
-                                                        }
-                                                },
-                                                (r) => {
-                                                        let buffers = [];
-                                                        r.on("error", (e) => console.error(e));
-                                                        r.on("data", (b) => buffers.push(b));
-                                                        r.on("end", () => {
-                                                                const html = Buffer.concat(buffers);
-                                                                const beg = html.indexOf("/tmp/");
-                                                                const end = html.indexOf("mp3", beg) + 3;
-                                                                const sub = html.subarray(beg, end).toString();
-        
+
                                                                 https.get(`https://readloud.net${sub}`, async (r2) => {
                                                                         r2.pipe(res);
                                                                         return res.writeHead(200, {
@@ -245,7 +208,17 @@ app.get('/oddcast-julie', function(req, res) {
   })
 
 if (settings.express.serveStatic)
-        app.use(express.static('./build/www'));
+        app.use(express.static('./www'));
+
+// Add settings endpoint
+app.get('/api/settings', (req, res) => {
+    res.json({
+        rooms: settings.rooms || { limit: 100, default: "bonziworld" },
+        maxUsers: settings.maxUsers || 50,
+        godword: settings.godword || "bonzibuddy"
+    });
+});
+
 var server = require('http').createServer(app);
 
 // Init socket.io
